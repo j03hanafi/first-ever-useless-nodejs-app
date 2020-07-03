@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+}
+
+.brand {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+}
+
+.brand-header {
+  border-bottom: solid black 2px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  border-bottom: solid black 2px;
+  border-left: solid black 1px;
+}
+
+.story {
+  border-right: solid black 1px;
+  padding: 0 10px;
+}
+
+.quarter {
+  width: 25%;
+}
+
+.half {
+  width: 50%;
+}
+
+.three-quarter {
+  width: 75%;
+}
+
+.article-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.article-img {
+  width: 100%;
+}
+
+.other-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.site-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.section-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.section-link:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.section-politics {
+  background-color: aqua;
+}
+
+.section-tech {
+  background-color: yellowgreen;
+}
+
+.section-locallocal {
+  background-color: wheat;
+}
+
+.section-opinion {
+  background-color: thistle;
+}
+
+.section-sports {
+  background-color: tomato;
+}
