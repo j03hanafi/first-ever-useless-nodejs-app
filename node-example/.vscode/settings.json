@@ -1,0 +1,8 @@
+{
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "/subscriptions/10a079de-89df-4f47-81aa-62692d93670b/resourceGroups/intro-to-web-by-joe/providers/Microsoft.Web/sites/intro-to-web-by-joe",
+  "appService.deploySubpath": "."
+}

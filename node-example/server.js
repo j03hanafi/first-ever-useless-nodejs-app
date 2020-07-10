@@ -1,5 +1,5 @@
-const express = require("express");
-const path = require("path");
+import express, { static } from "express";
+import { join } from "path";
 
 const complements = [
   "You like nice today",
@@ -21,7 +21,7 @@ function getRandomComplement() {
 const app = express();
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(join(__dirname, "index.html"));
 });
 
 app.get("/complement", function (req, res) {
@@ -32,7 +32,8 @@ app.get("/complement", function (req, res) {
     .end();
 });
 
-app.use("/public", express.static("./public"));
+app.use("/public", static("./public"));
 
-app.listen(3000);
-console.log("listening on http://localhost:3000");
+const port = process.env.PORT || 3000;
+app.listen(port);
+console.log(`listening on http://localhost:${port}`);
