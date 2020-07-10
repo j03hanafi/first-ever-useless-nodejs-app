@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Ever Web App</title>
+    <link rel="stylesheet" href="./public/style.css" />
   </head>
   <body>
-    <h1>My First Ever Web App using NodeJS</h1>
-    <h3>complements!</h3>
-    <p class="complement">none loaded yet</p>
-    <button class="request-complement">Request New Complement</button>
-    <script src="./public/complements.js"></script>
+    <header class="title center">
+      <h1 class="title-head">My First Ever Web App using NodeJS</h1>
+    </header>
+
+    <section class="app-intro center">
+      <h1 class="intro-title">Complements! (for developer)</h1>
+      <p class="intro-desc">
+        This is a special application for you who need motivation and compliment
+        (spoiler: there will be a cute cat)
+      </p>
+    </section>
+
+    <section class="content center">
+      <button class="request-complement">Request New Complement</button>
+      <p class="complement">none loaded yet</p>
+      <div class="content-img"></div>
+      <!-- <img src="" alt="Cute cat gif" class="cat" /> -->
+    </section>
+    <script src="./public/fetch.js"></script>
   </body>
 </html>

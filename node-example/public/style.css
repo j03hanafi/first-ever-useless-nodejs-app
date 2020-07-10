@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+}
+
+.app-intro {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+}
+
+.center {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-head {
+}
+
+.content {
+  width: 80%;
+  margin: 0 10%;
+  display: flex;
+}
+
+.complement {
+  width: 50%;
+  text-align: center;
+  letter-spacing: 0.025rem;
+  line-height: 1.25rem;
+}
