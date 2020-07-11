@@ -35,8 +35,35 @@ body {
 }
 
 .complement {
-  width: 50%;
-  text-align: center;
+  width: 60%;
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+  font-style: italic;
+  text-decoration: underline blueviolet;
   letter-spacing: 0.025rem;
-  line-height: 1.25rem;
+  line-height: 2.25rem;
+}
+
+.request-complement {
+  background-color: white;
+  padding: 1rem 2rem;
+  color: blueviolet;
+  border: solid 1px blueviolet;
+  border-radius: 2rem;
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: background-color 0.25s, color 0.25s, border 0.25s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.request-complement:hover {
+  background-color: blueviolet;
+  color: white;
+  border: solid 1px purple;
+}
+
+.request-complement:focus {
+  outline: none;
 }
