@@ -34,7 +34,7 @@ body {
   display: flex;
 }
 
-.complement {
+.compliment {
   width: 60%;
   text-align: left;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -45,7 +45,7 @@ body {
   line-height: 2.25rem;
 }
 
-.request-complement {
+.request-compliment {
   background-color: white;
   padding: 1rem 2rem;
   color: blueviolet;
@@ -58,13 +58,13 @@ body {
   cursor: pointer;
 }
 
-.request-complement:hover {
+.request-compliment:hover {
   background-color: blueviolet;
   color: white;
   border: solid 1px purple;
 }
 
-.request-complement:focus {
+.request-compliment:focus {
   outline: none;
 }
 
@@ -76,7 +76,7 @@ body {
 
 /* for mobile */
 @media only screen and (max-width: 768px) {
-  .complement {
+  .compliment {
     width: 100%;
   }
 }

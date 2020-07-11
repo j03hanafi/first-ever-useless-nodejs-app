@@ -1,15 +1,15 @@
 const CAT_URL = "https://api.thecatapi.com/v1/images/search?mime_types=gif";
 
 document
-  .querySelector(".request-complement")
+  .querySelector(".request-compliment")
   .addEventListener("click", function () {
-    fetch("/complement")
+    fetch("/compliment")
       .then(function (res) {
         const data = res.json();
         return data;
       })
       .then(function (data) {
-        document.querySelector(".complement").innerText = data.complement;
+        document.querySelector(".compliment").innerText = data.compliment;
       })
       .then(function () {
         const promise = fetch(CAT_URL);

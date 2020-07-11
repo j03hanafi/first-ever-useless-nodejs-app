@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fetch = require("node-fetch");
 
-const complements = [
+const compliments = [
   "You like nice today",
   "That dress looks nice on you",
   "Have you been working out?",
@@ -64,8 +64,8 @@ const complements = [
 ];
 
 function getRandomComplement() {
-  const randomIndex = Math.floor(Math.random() * complements.length);
-  return complements[randomIndex];
+  const randomIndex = Math.floor(Math.random() * compliments.length);
+  return compliments[randomIndex];
 }
 
 const app = express();
@@ -74,10 +74,10 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.get("/complement", function (req, res) {
+app.get("/compliment", function (req, res) {
   res
     .json({
-      complement: getRandomComplement(),
+      compliment: getRandomComplement(),
     })
     .end();
 });
