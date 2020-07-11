@@ -68,6 +68,12 @@ body {
   outline: none;
 }
 
+.original-quote {
+  font-size: smaller;
+  font-family: "Courier New", Courier, monospace;
+  color: grey;
+}
+
 /* for mobile */
 @media only screen and (max-width: 768px) {
   .complement {
